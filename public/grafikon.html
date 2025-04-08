@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vizualizacija Podataka</title>
+    <link rel="stylesheet" href="style/style_grafikon.css">
+</head>
+<body>
+    <header>
+        <h1>Weather Report</h1>
+    
+    <!-- Gumb za otvaranje navigacije -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-btn" aria-label="Toggle navigation menu">☰ Menu</label>
+    
+    <!-- Navigacija (sidebar) -->
+    <nav id="sidebar-menu" class="sidebar">
+        <ul>
+            <li><a href="index.html" aria-label="Početna stranica">Početna</a></li>
+            <li><a href="grafikon.html" aria-label="Grafikon">Grafikoni</a></li>
+            <li><a href="#" aria-label="Kontakt informacije">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+    <section class="charts-container">
+        <!-- Pie Chart -->
+        <div class="chart-wrapper">
+            <h2>Raspodjela vremenskih tipova</h2>
+            <div class="pie-chart"></div>
+        </div>
+
+        <!-- Bar Chart -->
+        <div class="chart-wrapper">
+            <h2>Temperatura po lokacijama</h2>
+            <div class="bar-chart">
+                <div class="bar" style="--value:23%">23°C</div>
+                <div class="bar" style="--value:29%">29°C</div>
+                <div class="bar" style="--value:36%">36°C</div>
+                <div class="bar" style="--value:32%">32°C</div>
+                <div class="bar" style="--value:18%">18°C</div>
+                <div class="bar" style="--value:8%">8°C</div>
+                <div class="bar" style="--value:40%">40°C</div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025. Web Programiranje. Sva prava pridrzana.</p>
+        </footer>
+</body>
+</html>

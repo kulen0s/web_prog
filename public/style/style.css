@@ -1,0 +1,257 @@
+/* Opći stilovi */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2e101030;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: url('header-banner-sky-cloud.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+    
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #000000;
+    margin: 0;
+}
+
+/* Gumb za otvaranje izbornika */
+.menu-btn {
+    background-color: #3498db;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* Sidebar styles */
+nav.sidebar {
+    position: fixed;
+    left: -250px; /* Initially hidden */
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    overflow-y: auto;
+    transition: left 0.3s ease-in-out;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    padding-top: 20px;
+}
+
+/* When the checkbox is checked, display the sidebar */
+.menu-toggle:checked + .menu-btn + nav.sidebar {
+    left: 0;
+}
+
+/* Sidebar links */
+nav.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav.sidebar li {
+    padding: 15px;
+    text-align: center;
+}
+
+nav.sidebar a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-weight: bold;
+}
+
+nav.sidebar a:hover {
+    background-color: #3498db;
+}
+
+/* Dropdown menu (hidden by default) */
+.dropdown-menu {
+    list-style-type: none;
+    display: none;
+}
+
+nav.sidebar li:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding-left: 30px;
+    background-color: #444;
+}
+
+.dropdown-menu li a {
+    font-weight: normal;
+}
+
+/* Stilovi za tablicu */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #3498db;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+/* Slike koje se mijenjaju s medijskim upitima */
+img.responsive-img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+img.responsive-img:hover {
+    opacity: 0.8;
+}
+
+
+/* Interaktivni gumb */
+button {
+    padding: 12px 24px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Animacija za hover */
+table th, table td {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+table th:hover, table td:hover {
+    background-color: #3498db;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background: #222;
+    color: white;
+}
+
+/* Responzivnost */
+@media (max-width: 768px) {
+    .data-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .analysis-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .form-flex input, .form-flex button {
+        width: 100%;
+    }
+
+    /* Skaliranje tablica na manjim ekranima */
+    table {
+        font-size: 14px;
+    }
+}
+
+/* Dodatni stilovi za responzivnost */
+@media (max-width: 768px) {
+    /* Poboljšajte pristup gumba za navigaciju */
+    .menu-btn {
+        font-size: 22px;
+        padding: 12px 20px;
+    }
+
+    /* Skaliranje tablica na manjim ekranima */
+    table {
+        font-size: 14px;
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+
+    /* Poboljšanje pristupačnosti sidebar-a na manjim ekranima */
+    nav.sidebar {
+        width: 100%;
+        left: -100%; /* Skriva sidebar na početku */
+        transition: left 0.3s ease-in-out;
+    }
+
+    .menu-toggle:checked + .menu-btn + nav.sidebar {
+        left: 0; /* Sidebar se pomiče */
+    }
+
+    /* Dodajte malo prostora između sekcija */
+    .content-container {
+        margin: 0 10px;
+    }
+
+    /* Stil za slike na manjim ekranima */
+    img.responsive-img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover; /* Dodajte cover za slike da zadrže ispravan omjer */
+    }
+    
+    /* Stil za preformuliranje nav linkova */
+    nav.sidebar li {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    /* Stilizirajte dropdown meni za manja ekrana */
+    .dropdown-menu {
+        padding-left: 20px;
+    }
+}
+

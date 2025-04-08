@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Primjer HTML5 stranice s osnovnim navigacijama, tablicama i sekcijama">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Primjer HTML5 stranice</title>
+</head>
+<body>
+    <header>
+        <h1>Weather Report</h1>
+    
+    <!-- Gumb za otvaranje navigacije -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-btn" aria-label="Toggle navigation menu">☰ Menu</label>
+    
+    <!-- Navigacija (sidebar) -->
+    <nav id="sidebar-menu" class="sidebar">
+        <ul>
+            <li><a href="index.html" aria-label="Početna stranica">Početna</a></li>
+            <li><a href="grafikon.html" aria-label="Grafikon">Grafikon</a></li>
+            <li><a href="slike.html" aria-label="Kontakt informacije">Galerija slika</a></li>
+        </ul>
+    </nav>
+</header>
+
+        <section class="table-section">
+            <table>
+                <tr>
+                    <th aria-label="Temperature in Celsius">Temperature (°C)</th>
+                    <th aria-label="Humidity in percentage">Humidity (%)</th>
+                    <th aria-label="Wind Speed in kilometers per hour">Wind Speed (km/h)</th>
+                    <th aria-label="Precipitation in percentage">Precipitation (%)</th>
+                    <th aria-label="Cloud Cover">Cloud Cover</th>
+                    <th aria-label="Atmospheric Pressure">Atmospheric Pressure</th>
+                    <th aria-label="UV Index">UV Index</th>
+                    <th aria-label="Season">Season</th>
+                    <th aria-label="Visibility in kilometers">Visibility (km)</th>
+                    <th aria-label="Location">Location</th>
+                    <th aria-label="Weather Type">Weather Type</th>
+                </tr>
+                <tr><td>23</td><td>69</td><td>9.5</td><td>10</td><td>clear</td><td>1012.91</td><td>9</td><td>Spring</td><td>8.5</td><td>inland</td><td>Sunny</td></tr>
+                <tr><td>29</td><td>82</td><td>18</td><td>78</td><td>overcast</td><td>991.54</td><td>3</td><td>Spring</td><td>4</td><td>inland</td><td>Rainy</td></tr>
+                <tr><td>36</td><td>48</td><td>3.5</td><td>11</td><td>partly cloudy</td><td>1024.92</td><td>10</td><td>Autumn</td><td>5.5</td><td>mountain</td><td>Sunny</td></tr>
+                <tr><td>32</td><td>35</td><td>5.5</td><td>9</td><td>partly cloudy</td><td>1010.24</td><td>6</td><td>Summer</td><td>9</td><td>coastal</td><td>Sunny</td></tr>
+                <tr><td>23</td><td>23</td><td>3.5</td><td>8</td><td>clear</td><td>1027.69</td><td>5</td><td>Spring</td><td>6.5</td><td>mountain</td><td>Sunny</td></tr>
+                <tr><td>30</td><td>57</td><td>12.5</td><td>33</td><td>overcast</td><td>1002.2</td><td>1</td><td>Autumn</td><td>7</td><td>inland</td><td>Cloudy</td></tr>
+                <tr><td>28</td><td>65</td><td>1.5</td><td>20</td><td>partly cloudy</td><td>1007</td><td>4</td><td>Spring</td><td>8.5</td><td>mountain</td><td>Cloudy</td></tr>
+                <tr><td>29</td><td>96</td><td>11.5</td><td>79</td><td>partly cloudy</td><td>1013.23</td><td>0</td><td>Spring</td><td>1</td><td>inland</td><td>Rainy</td></tr>
+                <tr><td>35</td><td>63</td><td>8</td><td>3</td><td>clear</td><td>1029.83</td><td>10</td><td>Spring</td><td>5</td><td>mountain</td><td>Sunny</td></tr>
+                <tr><td>18</td><td>82</td><td>8.5</td><td>83</td><td>overcast</td><td>999.13</td><td>0</td><td>Summer</td><td>2.5</td><td>coastal</td><td>Rainy</td></tr>
+                <tr><td>8</td><td>90</td><td>1.5</td><td>70</td><td>partly cloudy</td><td>1011.19</td><td>10</td><td>Spring</td><td>7.5</td><td>mountain</td><td>Cloudy</td></tr>
+                <tr><td>19</td><td>65</td><td>2.5</td><td>20</td><td>partly cloudy</td><td>1016.81</td><td>1</td><td>Spring</td><td>8</td><td>inland</td><td>Cloudy</td></tr>
+                <tr><td>28</td><td>72</td><td>14</td><td>73</td><td>partly cloudy</td><td>1005.12</td><td>1</td><td>Summer</td><td>1</td><td>coastal</td><td>Rainy</td></tr>
+                <tr><td>40</td><td>94</td><td>15</td><td>97</td><td>clear</td><td>1021.59</td><td>3</td><td>Autumn</td><td>4.5</td><td>coastal</td><td>Sunny</td></tr>
+                <tr><td>15</td><td>61</td><td>11</td><td>63</td><td>overcast</td><td>1006.12</td><td>3</td><td>Spring</td><td>4.5</td><td>mountain</td><td>Rainy</td></tr>
+                <tr><td>26</td><td>90</td><td>26</td><td>88</td><td>partly cloudy</td><td>998.97</td><td>4</td><td>Summer</td><td>2.5</td><td>coastal</td><td>Rainy</td></tr>
+                <tr><td>26</td><td>67</td><td>11</td><td>74</td><td>overcast</td><td>993.37</td><td>1</td><td>Spring</td><td>1.5</td><td>inland</td><td>Rainy</td></tr>
+            </table>
+        </section>
+    
+    
+    <section>
+        <h2>Ovo je glavna sekcija</h2>
+        <p>HTML5 omogućava semantičku strukturu koja poboljšava pristupačnost i SEO.</p>
+    </section>
+
+    <!-- Aside s Google mapom ili sličnim sadržajem -->
+    <aside aria-labelledby="aside-content">
+        <h3 id="aside-content">Pomoćni sadržaj</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243690.80714805416!2d-73.98300202429613!3d40.7492137237679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259af847db99f%3A0xb67237e8a0f52d25!2sNew%20York%2C%20NY%2010001%2C%20USA!5e0!3m2!1shr!2shr!4v1674477314001!5m2!1shr!2shr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </aside>
+    
+
+    <!--dodati odgovarajuće elemente na temelju danog zadatka: tablice, slike, tekst
+    Nepotrebno obrisati! -->
+
+    <article>
+        <h2>Najnovije vijesti</h2>
+        <p>Ovdje se nalazi članak s važnim informacijama.</p>
+    </article>
+
+    <footer>
+    <p>&copy; 2025. Web Programiranje. Sva prava pridrzana.</p>
+    </footer>
+</body>
+</html>
